@@ -8,7 +8,7 @@ function handleSubmit(e) {
   const rating = new FormData(e.target).get("rating");
 
   if (rating) {
-    wrapper.innerHTML = template.innerHTML.replace(/{{ rating }}/, rating);
+    wrapper.innerHTML = template.innerHTML.replace(/x/, rating);
 
     wrapper.computedStyleMap.height = wrapper.offsetHeight + "px";
   }
