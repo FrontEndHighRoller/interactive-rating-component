@@ -1,6 +1,6 @@
 const form = document.querySelector("[data-js-form]");
 const template = document.querySelector("[data-js-template]");
-const wrapper = document.querySelector("[data-js-wrapper]"); // Fix the typo here
+const wrapper = document.querySelector("[data-js-wrapper]");
 
 function handleSubmit(e) {
   e.preventDefault();
