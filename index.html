@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <main class="main">
+      <div data-js-wrapper class="container">
+        <img
+          src="images/icon-star.svg"
+          alt="star logo"
+          width="16"
+          height="16"
+          class="container__logo"
+        />
+        <h1 class="rating__h1">How did we do?</h1>
+        <p class="rating__paragraph">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+
+        <form data-js-form>
+          <div class="form__buttons">
+            <label class="form__label"
+              ><input type="radio" name="rating" value="2" class="sr-only" />
+              <span class="rating__span"
+                >1<span class="sr-only"> stars</span>
+              </span>
+            </label>
+
+            <label class="form__label"
+              ><input type="radio" name="rating" value="2" class="sr-only" />
+              <span class="rating__span"
+                >2<span class="sr-only"> stars</span>
+              </span>
+            </label>
+
+            <label class="form__label"
+              ><input type="radio" name="rating" value="3" class="sr-only" />
+              <span class="rating__span"
+                >3<span class="sr-only"> stars</span>
+              </span>
+            </label>
+
+            <label class="form__label"
+              ><input type="radio" name="rating" value="4" class="sr-only" />
+              <span class="rating__span"
+                >4<span class="sr-only"> stars</span>
+              </span>
+            </label>
+
+            <label class="form__label"
+              ><input type="radio" name="rating" value="5" class="sr-only" />
+              <span class="rating__span"
+                >5<span class="sr-only"> stars</span>
+              </span>
+            </label>
+          </div>
+
+          <button type="submit" class="rating__submit">Submit</button>
+        </form>
+
+        <template data-js-template class="template">
+          <img
+            src="images/illustration-thank-you.svg"
+            alt="phone infographics"
+            class="template__img"
+          />
+
+          <p class="template__div">You selected {{ rating }} out of 5</p>
+
+          <h1 class="rating__h1 template__h1">Thank you!</h1>
+
+          <p class="rating__paragraph template__paragraph">
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don’t hesitate to get in touch!
+          </p>
+        </template>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
